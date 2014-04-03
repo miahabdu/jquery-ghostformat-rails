@@ -1,19 +1,19 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'jquery/ghostformat/rails/version'
+require 'jquery-ghostformat-rails/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "jquery-ghostformat-rails"
   spec.version       = Jquery::Ghostformat::Rails::VERSION
   spec.authors       = ["Abdul Miah"]
   spec.email         = ["miahabd@msu.edu"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Gem to include jquery.ghostFormat.js}
+  spec.description   = %q{Gem to include jquery.ghostFormat.js}
   spec.homepage      = ""
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0")
+  spec.files         = Dir["{lib,vendor}/**/*"]
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
