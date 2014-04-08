@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["miahabd@msu.edu"]
   spec.summary       = %q{Gem to include jquery.ghostFormat.js}
   spec.description   = %q{Gem to include jquery.ghostFormat.js}
-  spec.homepage      = ""
+  spec.homepage      = "http://miahabdu.github.io/jquery.ghostFormat/"
   spec.license       = "MIT"
 
   spec.files         = Dir["{lib,vendor}/**/*"]
